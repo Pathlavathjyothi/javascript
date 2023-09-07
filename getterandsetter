@@ -1,0 +1,45 @@
+// Define an object using a constructor function
+function Person(firstName, lastName) {
+    // Private variables
+    let _firstName = firstName;
+    let _lastName = lastName;
+  
+    // Getter for full name
+    this.getFullName = function() {
+      return `${_firstName} ${_lastName}`;
+    };
+  
+    // Getter for first name
+    this.getFirstName = function() {
+      return _firstName;
+    };
+  
+    // Setter for first name
+    this.setFirstName = function(newFirstName) {
+      _firstName = newFirstName;
+    };
+  
+    // Getter for last name
+    this.getLastName = function() {
+      return _lastName;
+    };
+  
+    // Setter for last name
+    this.setLastName = function(newLastName) {
+      _lastName = newLastName;
+    };
+  }
+  
+  // Create a new Person object
+  const person = new Person("Jyothi", "pathlavath");
+  
+  // Accessing properties using getters
+  console.log(person.getFullName()); // Output: "Jyothi pathlavath"
+  console.log(person.getFirstName()); // Output: "Jyothi"
+  console.log(person.getLastName());  // Output: "pathlavath"
+  
+  // Modifying properties using setters
+  person.setFirstName("Jyoyhi");
+  person.setLastName("Mudavath");
+  
+  console.log(person.getFullName()); // Output: "Jyothi Mudavath"
