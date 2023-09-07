@@ -1,0 +1,23 @@
+// Define an object
+const car = {
+    make: "Toyota",
+    model: "Camry",
+    year: 2021,
+  
+    // Method to display car information
+    displayInfo: function() {
+      console.log(`Car: ${this.year} ${this.make} ${this.model}`);
+    },
+  
+    // Method to calculate the age of the car
+    calculateAge: function(currentYear) {
+      return currentYear - this.year;
+    }
+  };
+  
+  // Call the methods of the object
+  car.displayInfo(); // Output: "Car: 2021 Toyota Camry"
+  
+  const currentYear = new Date().getFullYear();
+  const carAge = car.calculateAge(currentYear);
+  console.log(`The car is ${carAge} years old.`); // Output: "The car is 2 years old."
