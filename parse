@@ -1,0 +1,9 @@
+const jsonString = '{"name": "Joythi", "age": 21, "city": "Kerala"}';
+
+// Parse the JSON string into a JavaScript object
+const jsonObject = JSON.parse(jsonString);
+
+// Now you can access the properties of the object
+console.log(jsonObject.name); // Output: "Jyothi"
+console.log(jsonObject.age);  // Output: 21
+console.log(jsonObject.city); // Output: "Kerala"
