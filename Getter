@@ -1,0 +1,10 @@
+const person = {
+    firstName: "sravanthi",
+    lastName: "pathlavath",
+    get fullName() {
+      return this.firstName + " " + this.lastName;
+    }
+  };
+  
+  // Access the getter method
+  console.log(person.fullName); // Outputs: "sravathi pathlavath"
