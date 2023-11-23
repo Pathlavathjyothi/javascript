@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
-        // Replace this with your own authentication logic
-        if (username === "yourUsername" && password === "yourPassword") {
-            alert("Login successful");
-            // Redirect to a new page or perform other actions here
+        
+        if (username === "lionelvenky" && password === "lionelmessi") {
+            alert("Login successful! welcome to my world");
+            
         } else {
             alert("Login failed. Please check your username and password.");
         }
